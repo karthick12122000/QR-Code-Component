@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins&display=swap"
+      rel="stylesheet">
+
+
+  </head>
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
+  }
+
+  .maincontainer {
+
+    background-color: #dfeeff;
+    width: 100vw !important;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    Font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .qrContainer {
+    width: 320px !important;
+    height: 500px !important;
+    border-radius: 15px;
+    background: var(--White) !important;
+    padding: 15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .qrContainer img {
+    border-radius: 15px;
+  }
+  .Para--container{
+    width: 290px;
+    height: 200px;
+    padding: inherit;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+  }
+  .Para--container p:nth-child(1) {
+    font-weight: 900;
+    
+    color: var(--Dark_blue);
+  }
+
+  .Para--container p:nth-child(2) {
+    font-weight: 400;
+  
+    color: var(--Grayish_blue);
+
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+</style>
+
+  <body>
+    <div class="maincontainer">
+      <div class="qrContainer">
+        <img src="./images/image-qr-code.png" alt="QR Code" width="290px"
+          height="290px">
+          <div class="Para--container">
+        <p> Improve your front-end skills by building projects</p>
+
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level</p>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a>.
+        Coded by <a
+          href="https://www.linkedin.com/in/karthick-kaliannan-68b763191/"
+          target="_blank">Karthick</a>
+      </div>
+    </div>
+  </body>
+
+</html>
